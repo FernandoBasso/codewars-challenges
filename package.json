@@ -1,0 +1,25 @@
+{
+  "name": "codewars",
+  "version": "0.0.1",
+  "description": "My solutions to Codewars challenges in a few different languages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/fernandobasso"
+  },
+  "keywords": [
+    "code",
+    "programming",
+    "codewars",
+    "algorithms",
+    "data-structures"
+  ],
+  "author": "Fernando Basso",
+  "license": "LGPL-3.0-or-later",
+  "devDependencies": {
+    "expect": "^26.6.2"
+  }
+}
