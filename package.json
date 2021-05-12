@@ -2,11 +2,15 @@
   "name": "codewars",
   "version": "0.0.1",
   "description": "My solutions to Codewars challenges in a few different languages.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
   },
   "repository": {
+  "jest": {
+    "transform": {}
+  },
     "type": "git",
     "url": "https://gitlab.com/fernandobasso"
   },
@@ -20,6 +24,10 @@
   "author": "Fernando Basso",
   "license": "LGPL-3.0-or-later",
   "devDependencies": {
-    "expect": "^26.6.2"
+    "expect": "^26.6.2",
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "ramda": "^0.27.1"
   }
 }

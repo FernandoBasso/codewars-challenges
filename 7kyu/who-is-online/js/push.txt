@@ -1,0 +1,31 @@
+
+
+10 Random Tests for upto 58 friends
+
+Completed in 8ms
+
+
+
+10 Random Tests for upto 1000 friends
+
+Completed in 33ms
+
+
+
+12 Random Tests for upto 100,000 of friends
+
+Completed in 1828ms
+
+
+
+For 500,000 random friends
+
+Completed in 1444ms
+
+
+
+Time: 4255ms
+
+Passed: 36
+
+Failed: 0
