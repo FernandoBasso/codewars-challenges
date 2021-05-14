@@ -1,4 +1,4 @@
-import { whosOnline } from './v1_online';
+import { whosOnline } from './v2_online';
 
 describe('whosOnline()', () => {
   it('should find one of each case', () => {
@@ -21,7 +21,7 @@ describe('whosOnline()', () => {
         status: 'online',
         lastActivity: 104
       }
-    ];
+    ]
 
     expect(whosOnline(oneOfEach)).toEqual({
       online: ['David'],
@@ -56,4 +56,3 @@ describe('whosOnline()', () => {
     });
   });
 });
-
