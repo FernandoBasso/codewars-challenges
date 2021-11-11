@@ -2,3 +2,8 @@
 # Ignore npm packages.
 #
 node_modules
+
+##
+# Asciidoctor generated HTML files.
+#
+*.html
