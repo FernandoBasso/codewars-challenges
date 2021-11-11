@@ -3,6 +3,8 @@
 :idseparator: -
 :toc: left
 :uri-challenge: https://www.codewars.com/kata/526571aae218b8ee490006f4/
+:source-highlighter: pygments
+:pygments-css: class
 
 - {uri-challenge}[Bit Counting Challenge]
 
@@ -26,5 +28,19 @@ Look:
 ----
 
 The last example is “wrong”. It seems the JS engine simply converted the positive 3 to binary and then prepended the negative sign. See link:https://stackoverflow.com/questions/16155592/negative-numbers-to-binary-string-in-javascript[this stackoverflow discussion^] for more details.
+
+== TypeScript Solution 1
+
+.Unit Tests
+[source,typescript,lineos]
+----
+include::../typescript/6kyu/count_bits.test.ts[]
+----
+
+.Implementation
+[source,typescript,lineos]
+----
+include::../typescript/6kyu/count_bits.ts[]
+----
 
 == The End
