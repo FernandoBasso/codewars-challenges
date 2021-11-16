@@ -1,0 +1,22 @@
+= Die Move
+:toc: left
+:idseparator: -
+:source-highlighter: pygments
+
+- link:https://www.codewars.com/kata/563a631f7cbbc236cf0000c2[Die Move Challenge^]
+
+== TypeScript
+
+=== Unit Tests
+
+[source,typescript,lineos]
+----
+include::../../src-typescript/8kyu/die-move/move.test.ts[]
+----
+
+==== Solution 1
+
+[source,typescript,lineos]
+----
+include::../../src-typescript/8kyu/die-move/move_v1.ts[]
+----
