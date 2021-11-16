@@ -1,3 +1,10 @@
 {
-  "editor.rulers": [78,100]
+  "editor.rulers": [
+    78,
+    100
+  ],
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.unstable": true,
+  "deno.importMap": "./typescript/import-map.json"
 }
