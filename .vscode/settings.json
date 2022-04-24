@@ -6,5 +6,8 @@
   "deno.enable": true,
   "deno.lint": true,
   "deno.unstable": true,
-  "deno.importMap": "./typescript/import-map.json"
+  "deno.importMap": "./typescript/import-map.json",
+  "cSpell.words": [
+    "Nums"
+  ]
 }
