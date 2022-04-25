@@ -8,6 +8,8 @@
   "deno.unstable": true,
   "deno.importMap": "./typescript/import-map.json",
   "cSpell.words": [
+    "lowercased",
+    "Lowercases",
     "Nums"
   ]
 }
