@@ -1,7 +1,8 @@
-import { englishAlphabetLower } from "/lib/index.ts";
+import { englishAlphabetLower as alpha } from "/lib/index.ts";
+import { toLower } from "/lib/index.ts";
 
 //
-// Version 1 using an more procedural, imperative style.
+// Version 2 using an FP, declarative approach.
 //
 
 /**
@@ -12,16 +13,12 @@ import { englishAlphabetLower } from "/lib/index.ts";
  * @returns The number of matching positions for that string.
  */
 export function countMatching(str: string): number {
-  let count = 0;
-
-  str.split("").forEach((char: string, i: number) => {
-    if (englishAlphabetLower[i] === char.toLowerCase()) ++count;
-  });
-
-  return count;
+  return str.split("").reduce((acc: number, chr: string, idx: number) => {
+    return alpha[idx] === toLower(chr) ? ++acc : acc;
+  }, 0);
 }
 
-/*
+/**
  * Count the number of matching positions of chars in the input string with
  * respect to the chars position in the alphabet.
  *
@@ -29,11 +26,5 @@ export function countMatching(str: string): number {
  * @returns An array with corresponding match count.
  */
 export function alphaSym(strs: string[]): number[] {
-  const counts: number[] = [];
-
-  strs.forEach((str: string) => {
-    counts.push(countMatching(str));
-  });
-
-  return counts;
+  return strs.map(countMatching);
 }

@@ -8,8 +8,11 @@
   "deno.unstable": true,
   "deno.importMap": "./typescript/import-map.json",
   "cSpell.words": [
+    "Codewars",
+    "Deno",
     "lowercased",
     "Lowercases",
-    "Nums"
+    "Nums",
+    "strs"
   ]
 }
