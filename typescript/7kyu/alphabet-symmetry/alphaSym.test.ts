@@ -1,6 +1,7 @@
 import { assertEquals } from "/deps.ts";
 // import { alphaSym, countMatching } from "./alphaSym-v1.ts";
-import { alphaSym, countMatching } from "./alphaSym-v2.ts";
+// import { alphaSym, countMatching } from "./alphaSym-v2.ts";
+import { alphaSym, countMatching } from "./alphaSym-v3.ts";
 
 Deno.test("getNumMatching()", async (t) => {
   await t.step("should return 0", () => {

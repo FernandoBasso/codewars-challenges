@@ -1,7 +1,7 @@
 {
   "editor.rulers": [
-    78,
-    100
+    72,
+    80,
   ],
   "deno.enable": true,
   "deno.lint": true,
