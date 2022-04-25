@@ -6,14 +6,19 @@ My code wars solutions in a few different languages.
 
 ## TypeScript and Deno
 
-I use link:https://deno.land[Deno] to test and run the TypeScript solutions.
+I use [Deno](https://deno.land) to test and run the TypeScript solutions.
+
+Unless otherwise noted, assume all deno-related commands
 
 ### Running Tests With Deno
 
 Change to the root directory of where these Codewars solutions have been cloned, e.g:
 
 ```text
-$ cd /path/to/devhowto/src/codewars
+$ cd ./typescript/
+$ deno test --import-map ./import-map.json --unstable ./
+$ deno test --import-map ./import-map.json ./lib/
+$ deno test --import-map ./import-map.json ./7kyu/ ./6kyu/
 ```
 
 The run all tests, or specific tests:
@@ -25,6 +30,21 @@ $ deno test --unstable 6kyu/friend-foe/friend-foe.spec
 ```
 
 Check extra options with `deno test  --help | less`.
+
+### Types
+
+Deno does type-checking by default for a few commands, like `run` and `test`. There is also a `check` command. Tests do type-checking by default, which means if you run tests, you are also type-checking your code. While prototyping and ideas for implementations, sometimes it we may wish to not type-check stuff:
+
+```text
+$ deno test \
+    --no-check \
+    --watch \
+    --quiet \
+    --import-map ./import-map.json \
+    ./7kyu/foo/foo.test.ts
+```
+
+
 
 ### Unstable APIs
 
