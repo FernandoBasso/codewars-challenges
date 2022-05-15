@@ -13,6 +13,8 @@
     "lowercased",
     "Lowercases",
     "Nums",
-    "strs"
+    "strs",
+    "uppercased",
+    "Uppercases"
   ]
 }
