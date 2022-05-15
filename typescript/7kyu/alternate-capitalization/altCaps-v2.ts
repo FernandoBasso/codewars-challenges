@@ -13,7 +13,7 @@ import { isEven, toUpper } from "/lib/index.ts";
  */
 export function altCaps(s: string): string[] {
   const alts: Array<string[]> = s.split("").reduce(
-    (acc: Array<string[]>, chr: string, idx: number) => {
+    (acc: Array<string[]>, chr: string, idx: number): Array<string[]> => {
       return [
         [...acc[0], isEven(idx) ? toUpper(chr) : chr],
         [...acc[1], isEven(idx) ? chr : toUpper(chr)],
