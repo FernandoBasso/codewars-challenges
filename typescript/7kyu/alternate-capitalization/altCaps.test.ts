@@ -1,5 +1,5 @@
 import { assertEquals } from "/deps.ts";
-import { altCaps } from "./altCaps-v2.ts";
+import { altCaps } from "./altCaps-v3.ts";
 
 Deno.test("altCaps()", async (t) => {
   await t.step("should return empty string", () => {
