@@ -6,3 +6,5 @@ export { toLower } from "./toLower.ts";
 export { toUpper } from "./toUpper.ts";
 
 export { isEven } from "./isEven.ts";
+
+export { toDigits } from "./toDigits.ts";

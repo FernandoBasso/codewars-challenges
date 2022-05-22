@@ -12,7 +12,9 @@
     "Deno",
     "lowercased",
     "Lowercases",
+    "num",
     "Nums",
+    "rem",
     "strs",
     "uppercased",
     "Uppercases"
