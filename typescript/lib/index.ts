@@ -7,4 +7,5 @@ export { toUpper } from "./toUpper.ts";
 
 export { isEven } from "./isEven.ts";
 
+export { containsDigit } from "./containsDigit.ts";
 export { toDigits } from "./toDigits.ts";

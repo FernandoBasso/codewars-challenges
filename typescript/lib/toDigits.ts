@@ -4,6 +4,9 @@
  * If the number is negative, the sign is discarded and treated as a
  * non-negative number. We only care about the digits, not the sign.
  *
+ * This solution DOES NOT rely on converting the number to a string.
+ * Instead, it uses plain (albeit simple) math operations.
+ *
  * @param num The number to turn into an array of digits.
  * @returns The array of digits from the input number.
  */
